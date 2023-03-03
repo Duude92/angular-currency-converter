@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ConverterComponent } from './components/Converter/converter.component';
 import { CurrencySelectorComponent } from './components/CurrencySelector/currency-selector/currency-selector.component';
 import { HeaderComponent } from './components/header/header.component';
+import { NoCommaPipe } from './no-comma.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { HeaderComponent } from './components/header/header.component';
     HeaderComponent,
     CurrencySelectorComponent,
     ConverterComponent,
+    NoCommaPipe,
   ],
   imports: [BrowserModule, HttpClientModule, FormsModule],
   providers: [],
