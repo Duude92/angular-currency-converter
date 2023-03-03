@@ -1,0 +1,7 @@
+<div class="currency-selector">
+    <input id="currency-value" type="number" [value]="currencyValue | currency :'1.0-2'"
+        (change)="OnInputChanged($event)">
+    <select id="currencty-selector" [(ngModel)]="currencySymbol" (ngModelChange)="OnInputChanged(null)">
+        <option *ngFor="let item of currencies" value={{item}}>{{item}}</option>
+    </select>
+</div>

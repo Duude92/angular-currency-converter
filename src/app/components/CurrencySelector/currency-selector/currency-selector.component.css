@@ -1,0 +1,36 @@
+.currency-selector {
+    display: flex;
+    border: solid 1px;
+    width: fit-content;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.currency-selector>* {
+    min-height: 60px;
+    border: 0;
+}
+
+.currency-selector>*:focus {
+    outline: 0;
+}
+
+.currency-selector>input {
+    font-size: 3rem;
+    max-width: 10rem;
+}
+
+.currency-selector>select {
+    font-size: 2rem;
+    max-width: 7rem;
+    background-color: unset;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
